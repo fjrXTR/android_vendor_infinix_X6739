@@ -209,7 +209,6 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6739/proprietary/vendor/etc/init/android.hardware.keymaster@4.1-service.trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.1-service.trustonic.rc \
     vendor/infinix/X6739/proprietary/vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2@1.2-mediatek.rc \
     vendor/infinix/X6739/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc \
-    vendor/infinix/X6739/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc \
     vendor/infinix/X6739/proprietary/vendor/etc/init/android.hardware.sensors@2.0-service.multihal-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors@2.0-service.multihal-mediatek.rc \
     vendor/infinix/X6739/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
     vendor/infinix/X6739/proprietary/vendor/etc/init/fuelgauged_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_init.rc \
@@ -320,12 +319,12 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6739/proprietary/vendor/thh/ta/df1edda8627911e980ae507b9d9a7e7d.ta:$(TARGET_COPY_OUT_VENDOR)/thh/ta/df1edda8627911e980ae507b9d9a7e7d.ta
 
 PRODUCT_PACKAGES += \
-    AV1SecureVdecCA \
-    AVCSecureVdecCA \
-    HEVCSecureVdecCA \
-    VP9SecureVdecCA \
+    AV1SecureVdecCA_510 \
+    AVCSecureVdecCA_510 \
+    HEVCSecureVdecCA_510 \
+    VP9SecureVdecCA_510 \
     vendor.mediatek.hardware.videotelephony@1.0-impl \
-    libAVCSecureVencCA \
+    libAVCSecureVencCA_510 \
     libTEECommon \
     libadpcmdec_mtk \
     libaedv \
@@ -1172,7 +1171,6 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1-service.trustonic \
     android.hardware.media.c2@1.2-mediatek-64b \
     android.hardware.neuralnetworks@1.3-service-mtk-neuron \
-    android.hardware.secure_element@1.2-service-mediatek \
     android.hardware.sensors@2.0-service.multihal-mediatek \
     camerahalserver \
     mtkfusionrild \

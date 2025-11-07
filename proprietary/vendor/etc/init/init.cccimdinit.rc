@@ -33,7 +33,7 @@ service ccci_mdinit /vendor/bin/ccci_mdinit 0
     group radio system
     class core
     priority -20
-    ioprio rt 4
+    ioprio rt 0   #TDD:pengbo.zhu enhance level by 2025/4/14
     oneshot
 
 service ccci3_mdinit /vendor/bin/ccci_mdinit 2

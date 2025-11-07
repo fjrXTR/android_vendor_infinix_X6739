@@ -133,14 +133,20 @@
 <virtualSpnOverride mccmncspn="40177ALTEL 4G" name="ALTEL 4G"/>
 <virtualSpnOverride mccmncspn="40177ALTEL" name="ALTEL"/>
 <virtualSpnOverride mccmncspn="40486VodafoneIdea" name="VodafoneIdea"/>
+<virtualSpnOverride mccmncspn="40449airtel" name="airtel"/>
+<virtualSpnOverride mccmncspn="40444Vi" name="Vi"/>
+<virtualSpnOverride mccmncspn="405799VIL" name="VIL"/>
+<virtualSpnOverride mccmncspn="405852VIL" name="VIL"/>
 <virtualSpnOverride mccmncspn="41003Onic" name="Onic"/>
 <virtualSpnOverride mccmncspn="41866Fastlink" name="Fastlink"/>
 <virtualSpnOverride mccmncspn="42402swyp" name="swyp"/>
+<virtualSpnOverride mccmncspn="42402five" name="five"/>
 <virtualSpnOverride mccmncspn="42501012 Mobile" name="012 Mobile"/>
 <virtualSpnOverride mccmncspn="43404OQ" name="OQ"/>
 <virtualSpnOverride mccmncspn="43406PowerTel" name="Perfectum"/>
 <virtualSpnOverride mccmncspn="43407MOBIUZ" name="MOBIUZ"/>
 <virtualSpnOverride mccmncspn="43603Anor" name="Anor"/>
+<virtualSpnOverride mccmncspn="45202VINAPHONE" name="Vinaphone"/>
 <virtualSpnOverride mccmncspn="45209reddi" name="reddi"/>
 <virtualSpnOverride mccmncspn="45209Wintel" name="Wintel"/>
 <virtualSpnOverride mccmncspn="466017-Mobile" name="7-Mobile"/>
@@ -201,6 +207,7 @@
 <virtualSpnOverride mccmncspn="732111Flash Mobile" name="Flash Mobile"/>
 <virtualSpnOverride mccmncspn="732111Movil Exito" name="Movil Exito"/>
 <virtualSpnOverride mccmncspn="732123Virgin Mobile" name="Virgin Mobile"/>
+<virtualSpnOverride mccmncspn="732360WOM Roaming" name="WOM Roaming Int"/>
 <!-- yj:modify for X6532COP-2163 by linlin.yang 20240927 start -->
 <virtualSpnOverride mccmncspn="732111PILLO" name="PILLO"/>
 <!-- yj:modify for X6532COP-2163 by linlin.yang 20240927 end -->

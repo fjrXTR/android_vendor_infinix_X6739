@@ -38,7 +38,10 @@
     <EccEntry Ecc="1117" Category="0" Condition="10" Plmn="712 FFF"/>
     <EccEntry Ecc="1128" Category="0" Condition="10" Plmn="712 FFF"/>
 
-    <EccEntry Ecc="105" Category="0" Condition="10" Plmn="716 FFF"/>
+    <EccEntry Ecc="105" Category="0" Condition="2" Plmn="716 FFF"/>
+    <EccEntry Ecc="110" Category="0" Condition="4" Plmn="716 10"/>
+    <EccEntry Ecc="115" Category="0" Condition="4" Plmn="716 10"/>
+    <EccEntry Ecc="116" Category="0" Condition="4" Plmn="716 10"/>
     <EccEntry Ecc="110" Category="0" Condition="10" Plmn="716 FFF"/>
     <EccEntry Ecc="115" Category="0" Condition="10" Plmn="716 FFF"/>
     <EccEntry Ecc="116" Category="0" Condition="10" Plmn="716 FFF"/>
@@ -646,7 +649,6 @@
 
     <EccEntry Ecc="199" Category="0" Condition="1" Plmn="280 FFF" />
 
-    <EccEntry Ecc="112" Category="0" Condition="10" Plmn="262 FFF" />
     <EccEntry Ecc="110" Category="0" Condition="10" Plmn="262 FFF" />
 
     <EccEntry Ecc="110" Category="0" Condition="10" Plmn="247 FFF" />
@@ -727,6 +729,11 @@
     <EccEntry Ecc="002" Category="0" Condition="10" Plmn="438 FFF" />
     <EccEntry Ecc="003" Category="0" Condition="10" Plmn="438 FFF" />
     <EccEntry Ecc="004" Category="0" Condition="10" Plmn="438 FFF" />
+
+    <EccEntry Ecc="155" Category="0" Condition="10" Plmn="740 01" />
+    <EccEntry Ecc="135" Category="0" Condition="10" Plmn="740 01" />
+    <EccEntry Ecc="166" Category="0" Condition="10" Plmn="740 01" />
+    <EccEntry Ecc="171" Category="0" Condition="10" Plmn="740 01" />
 
     <EccEntry Ecc="119" Category="0" Condition="2" Plmn="460 FFF" />
     <EccEntry Ecc="110" Category="0" Condition="2" Plmn="460 FFF" />
