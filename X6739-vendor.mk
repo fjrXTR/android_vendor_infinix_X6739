@@ -6,7 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/infinix/X6739
 
 PRODUCT_COPY_FILES += \
-    vendor/infinix/X6739/proprietary/system_ext/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.vtservice.rc \
     vendor/infinix/X6739/proprietary/vendor/app/mcRegistry/020f0000000000000000000000000000.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/020f0000000000000000000000000000.drbin \
     vendor/infinix/X6739/proprietary/vendor/app/mcRegistry/020f0000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/020f0000000000000000000000000000.tlbin \
     vendor/infinix/X6739/proprietary/vendor/app/mcRegistry/035c0000000000000000000000000000.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/035c0000000000000000000000000000.drbin \
@@ -248,11 +247,14 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6739/proprietary/vendor/etc/init/vendor.trustonic.tee@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.tee@1.1-service.rc \
     vendor/infinix/X6739/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
     vendor/infinix/X6739/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
+    vendor/infinix/X6739/proprietary/vendor/etc/libnfc-hal-st.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-hal-st.conf \
+    vendor/infinix/X6739/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/infinix/X6739/proprietary/vendor/etc/mpe.conf:$(TARGET_COPY_OUT_VENDOR)/etc/mpe.conf \
     vendor/infinix/X6739/proprietary/vendor/etc/nhw:$(TARGET_COPY_OUT_VENDOR)/etc/nhw \
     vendor/infinix/X6739/proprietary/vendor/etc/slp_conf:$(TARGET_COPY_OUT_VENDOR)/etc/slp_conf \
     vendor/infinix/X6739/proprietary/vendor/etc/smsdbvisitor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/smsdbvisitor.xml \
     vendor/infinix/X6739/proprietary/vendor/etc/special_pws_channel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/special_pws_channel.xml \
+    vendor/infinix/X6739/proprietary/vendor/etc/st21nfc_conf.txt:$(TARGET_COPY_OUT_VENDOR)/etc/st21nfc_conf.txt \
     vendor/infinix/X6739/proprietary/vendor/etc/tran_camprofiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/tran_camprofiles.xml \
     vendor/infinix/X6739/proprietary/vendor/etc/trancam_filelock.json:$(TARGET_COPY_OUT_VENDOR)/etc/trancam_filelock.json \
     vendor/infinix/X6739/proprietary/vendor/etc/vendor-apns-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vendor-apns-conf.xml \
@@ -323,7 +325,6 @@ PRODUCT_PACKAGES += \
     AVCSecureVdecCA_510 \
     HEVCSecureVdecCA_510 \
     VP9SecureVdecCA_510 \
-    vendor.mediatek.hardware.videotelephony@1.0-impl \
     libAVCSecureVencCA_510 \
     libTEECommon \
     libadpcmdec_mtk \
@@ -376,7 +377,6 @@ PRODUCT_PACKAGES += \
     libvpu5 \
     libmtk_drvb \
     vendor.mediatek.hardware.apuware.utils@2.0 \
-    vendor.mediatek.hardware.videotelephony@1.0_vendor \
     awinic.audio.effect \
     libHEVCdec_sa.ca7.android \
     libh264dec_customize \
@@ -435,6 +435,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mms@1.6-impl \
     vendor.mediatek.hardware.nvram@1.1-impl \
     vendor.mediatek.hardware.pq@2.15-impl \
+    vendor.mediatek.hardware.videotelephony@1.0-impl \
     lbs_hidl_service-impl \
     lib3a.ae.core \
     lib3a.ae \
@@ -1116,37 +1117,11 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq@2.7 \
     vendor.mediatek.hardware.pq@2.8 \
     vendor.mediatek.hardware.pq@2.9 \
+    vendor.mediatek.hardware.videotelephony@1.0 \
     vendor.transsion.hardware.trancam.trancamserver@1.0 \
     vendor.trustonic.tee.tui@1.0 \
     vendor.trustonic.tee@1.0 \
     vendor.trustonic.tee@1.1 \
-    libmtk_vt_wrapper \
-    libmtkperf_client_system_ext \
-    libvcodec_cap \
-    libvcodec_capenc \
-    vendor.mediatek.hardware.mtkpower-V1-ndk \
-    vendor.mediatek.hardware.videotelephony-V1-ndk \
-    vendor.mediatek.hardware.videotelephony@1.0 \
-    libcomutils \
-    libimsma \
-    libimsma_adapt \
-    libimsma_rtp \
-    libimsma_socketwrapper \
-    libmtk_vt_service \
-    libsignal \
-    libsink-mtk \
-    libsource \
-    libvt_avsync \
-    ImsService \
-    mediatek-carrier-config-manager \
-    mediatek-common \
-    mediatek-framework \
-    mediatek-ims-base \
-    mediatek-ims-common \
-    mediatek-ims-extension-plugin \
-    mediatek-telecom-common \
-    mediatek-telephony-base \
-    mediatek-telephony-common \
     android.hardware.biometrics.fingerprint@2.1-service-mediatek.xml \
     android.hardware.biometrics.fingerprint@2.3-service.transsion.xml \
     android.hardware.neuralnetworks@1.3-service-mtk-mdla-dsp-gpu.xml \
@@ -1208,8 +1183,7 @@ PRODUCT_PACKAGES += \
     volte_clientapi_ua \
     volte_rcs_ua \
     wifi_dump \
-    wlan_assistant \
-    vtservice
+    wlan_assistant
 
 PRODUCT_PACKAGES += \
     vendor_lib_libmtk_drvb_so \
